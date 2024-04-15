@@ -18,6 +18,14 @@ public class BaseTest {
 		driver.get(applicationurl);
 		
 	}
+	public static  void waitThread() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public static WebDriver getDriver(String browsername) {
 		if (driver==null) {
 			if(browsername.equalsIgnoreCase("Chrome")) {
@@ -33,3 +41,4 @@ public class BaseTest {
 		}
 
 }
+
