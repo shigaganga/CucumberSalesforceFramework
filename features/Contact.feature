@@ -22,7 +22,6 @@ Then User waits for the element "frame1"
 Then Change to frame "frame1"
 Then User waits for the element "Accountbox"
 Then User Enter in to the text box "Accountbox" "sa"  
-Then Back to defaultframe
 Then user waits to loadpage
 Then Click on the button "go"  
 Then Back to defaultframe

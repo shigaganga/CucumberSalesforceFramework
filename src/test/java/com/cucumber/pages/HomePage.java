@@ -73,6 +73,7 @@ addObject("openRemainder",By.id("testbtn"));
 addObject("parentwindow",By.xpath("//div[@id='userNav']"));
 addObject("developerConsole", By.xpath("//a[@title='Developer Console (New Window)']"));
 addObject("Contact", By.xpath("//li[@id='Contact_Tab']/a"));
+addObject("Account", By.xpath("//a[@title='Accounts Tab']"));
 
 }
 }
