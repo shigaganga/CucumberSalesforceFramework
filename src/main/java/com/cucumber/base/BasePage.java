@@ -36,6 +36,9 @@ public class BasePage {
 		WebElement element = driver.findElement(by);
 		return element ;
 	}
+	
+	
+	 
 	public void enterIntoTextBox(String logicalName, String value) {
 		WebElement element =getElement(logicalName);
 		element.sendKeys(value);
@@ -60,12 +63,25 @@ public class BasePage {
 		element.click();
 		
 	}
+	public void clickonInterceptedExceptionButton(String logicalName) {
+		WebElement element = getElement(logicalName);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(element)); 
+		element.click();
+		
+	}
+
+   
+    
 	public String getTextFromElement(String logicalName) {
 		WebElement element=getElement(logicalName);
 		String data = element.getText();
 		return data;
 	
 }
+	  public String getPageTitle() {
+	        return driver.getTitle();
+	    }
 	public void clearElement(String LogicalName) {
 		WebElement element=getElement(LogicalName);
 		if (element.isDisplayed()) {
@@ -133,55 +149,50 @@ public class BasePage {
 		
 	}
 	//window methods
-			public String getParentWindow() {
-				String parentwindow=driver.getWindowHandle();
-				System.out.println("Title of the current window:" + driver.getTitle());
-				return parentwindow;
+	public String getParentWindow() {
+		String parentwindow=driver.getWindowHandle();
+		System.out.println("Title of the current window:" + driver.getTitle());
+		return parentwindow;
+		
+	}
+	
+	public void switchNewWindow() {
+		String parentwindow=driver.getWindowHandle();
+		Set<String>windowHandles=driver.getWindowHandles();
+		for(String newWindowHandle:windowHandles) {
+			 if (!newWindowHandle.equals(parentwindow))
+		        {
+		        
+				 driver.switchTo().window(newWindowHandle);
+		        }
+			 System.out.println("Title of the new window:" + driver.getTitle());	}}
 				
-			}
-			
-			public void switchNewWindow() {
-				String parentwindow=driver.getWindowHandle();
-				Set<String>windowHandles=driver.getWindowHandles();
-				for(String newWindowHandle:windowHandles) {
-					 if (!newWindowHandle.equals(parentwindow))
-				        {
-				        
-						 driver.switchTo().window(newWindowHandle);
-				        }
-					 	}
-				System.out.println("Title of the new window:" + driver.getTitle());
-				}
-						
-			public void switchtoParentWindow() {
-				String parentwindow=getParentWindow();
-				Set<String>windowHandles=driver.getWindowHandles();
-				for(String newWindowHandle:windowHandles) {
-					 if (newWindowHandle.equals(parentwindow))
-				        {
-				        
-						 driver.switchTo().window(parentwindow);
-				        }
-					 	}
-				System.out.println("Title of the new window:" + driver.getTitle());
-				}
+	public void switchToparentWndow(String parentwindow) {
+		Set<String>windowHandles=driver.getWindowHandles();
+		for(String newWindowHandle:windowHandles) {
+			 if (newWindowHandle.equals(parentwindow))
+		        {
+		        
+				 driver.switchTo().window(parentwindow);
+		        }
+			 System.out.println("Title of the new window:" + driver.getTitle());	}}
+				
 						
 			
 			
 			
 	
-	public Alert switchToAlert() {
+	
+	public String getAlertText() {
 		Alert alert=driver.switchTo().alert();
-		return alert;
-	}
-	public String getAlertText(Alert alert) {
 		return alert.getText();
 	}
 	public void AcceptAlert(Alert alert) {
-		alert.accept();
+		Alert alert1=driver.switchTo().alert();
+		alert1.accept();
 	}
 	public void dismissAlert() {
-		Alert alert=driver.switchTo().alert();
-		alert.dismiss();
+		Alert alert2=driver.switchTo().alert();
+		alert2.dismiss();
 	}
 	}

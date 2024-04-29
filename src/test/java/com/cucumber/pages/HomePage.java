@@ -28,6 +28,7 @@ addObject("Logout", By.xpath("//a[@title='Logout']"));
 	addObject("file",By.xpath("//a[@id='publisherAttachContentPost']/span[1]"));
 	addObject("moderator",By.id("displayBadge"));
 	addObject("uploadphoto",By.xpath("//a[@id='uploadLink']"));
+	
 	addObject("frame3",By.id("uploadPhotoContentId"));
 	addObject("photopath",By.xpath("//input[@id='j_id0:uploadFileForm:uploadInputFile']"));
 	addObject("usermenudropdown",By.xpath("//div[@id='userNavButton']"));
@@ -74,6 +75,10 @@ addObject("parentwindow",By.xpath("//div[@id='userNav']"));
 addObject("developerConsole", By.xpath("//a[@title='Developer Console (New Window)']"));
 addObject("Contact", By.xpath("//li[@id='Contact_Tab']/a"));
 addObject("Account", By.xpath("//a[@title='Accounts Tab']"));
+addObject("Opportunity", By.xpath("//a[text()='Opportunities']"));
+addObject("Lead", By.xpath("//a[text()='Leads']"));
+addObject("Home", By.xpath("//a[text()='Home']"));
+addObject("plusTab", By.xpath("//img[@title='All Tabs']"));
 
 }
 }

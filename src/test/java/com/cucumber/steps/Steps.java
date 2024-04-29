@@ -17,7 +17,7 @@ import io.cucumber.java.en.When;
 public class Steps extends BaseTest{
 	BasePage page;
 	PageFactory pagefactory=new PageFactory();
-
+	String parent;
 
 	@Given("User launch the application in {string}")
 public void user_launch_the_application_in(String browsername) {
@@ -36,6 +36,15 @@ public void user_waits_for_the_element(String logicalName) {
 public void user_waits_to_loadpage() {
   waitThread();
 }
+@Then("gettitle of the page")
+public void gettitle_of_the_page() {
+    page.getPageTitle();
+}
+@Then("Click on the exception {string}")
+public void click_on_the_exception(String logicalName) {
+page.clickonInterceptedExceptionButton(logicalName);
+}
+
 
 @Then("Clear Element {string}")
 public void clear_element(String logicalName) {
@@ -46,9 +55,10 @@ public void user_verifies_the_textbox(String string, String string2) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-
-
-
+@Then("Click on Alert")
+public void click_on_alert() {
+    page.AcceptAlert(null);
+}
 
 
 
@@ -102,21 +112,21 @@ public void mousehover_to_element(String logicalName) {
 public void click_on_the_radiobutton(String logicalName) {
     page.clickonRadioButton(logicalName);
 }
-@When("Find the current parent window {string}")
-public void find_the_current_parent_window(String logicalName) {
-   page.getParentWindow();
-   
+
+
+@When("Find the current parent window")
+public void find_the_current_parent_window() {
+	parent=page.getParentWindow();
 }
 @When("Switch to the new window {string}")
 public void switch_to_the_new_window(String string) {
    page.switchNewWindow();
 }
 @Then("Switch back to the parent window")
-public void switch_back_to_the_parent_window() {
-    page.switchtoParentWindow();
+public void switch_back_to_the_parent_window(){
+    page.switchToparentWndow(parent);
 
 }
-
 
 
 @After

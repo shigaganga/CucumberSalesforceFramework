@@ -1,5 +1,5 @@
 Feature:Login scenarios of salesforce
-@login @Test
+@login @Test20
 Scenario:New Contact
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -15,7 +15,7 @@ Then Click on the button "New"
 Then Click on the button "Continue"  
 Then User waits for the element "lastname"   
 Then User Enter in to the text box "lastname" "Lastname"   
-When Find the current parent window "parentwindow"
+When Find the current parent window 
 Then Click on the link "searchicon" 
 And Switch to the new window "newWindow"
 Then User waits for the element "frame1"
@@ -27,7 +27,7 @@ Then Click on the button "go"
 Then Back to defaultframe
 Then Change to frame "frame2"  
 Then Click on the button "table"
-And Switch back to the parent window	
+And Switch back to the parent window 
 Then User waits for the element "save"
 Then Click on the button "save"    
 @login 
@@ -81,5 +81,5 @@ Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
 Given User is on "HomePage"  
 Then Click on the link "Contact"
-  Given User is on "ContactPage"		
+ Given User is on "ContactPage"		
  Then Click on the link "Onecontact"  

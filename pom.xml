@@ -43,7 +43,12 @@
 			<version>7.15.0</version>
 			<type>pom</type>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>com.training.api</groupId>
+			<artifactId>ApiTesting</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  </dependencies>
 	
 	<build>
 	  <plugins>

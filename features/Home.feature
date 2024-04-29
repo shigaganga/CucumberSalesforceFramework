@@ -11,7 +11,7 @@ Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown"
 
-@Login @Developing
+@Login 
 Scenario:Usermenuprofile
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -76,7 +76,7 @@ Then Click on the button "saveEmailsettings"
 Then Click on the link "calender"
 Then Click on the link "activityremainder"
 Then Click on the button "openRemainder"
- @Login  
+ @Login @Developing
 Scenario:Developer Console
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -87,7 +87,7 @@ Then Click on the button "Login"
 Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown" 
-When Find the current parent window "parentwindow"
+When Find the current parent window "parentwindow"		
 Then Click on the button "developerConsole" 
 And Switch to the new window "newWindow"
 And Switch back to the parent window
