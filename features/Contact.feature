@@ -1,5 +1,5 @@
 Feature:Login scenarios of salesforce
-@login @Test20
+@Contact @Test
 Scenario:New Contact
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -7,8 +7,10 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then Click on the link "Contact"
+Then user waits to loadpage
 Given User is on "ContactPage"
 Then User waits for the element "New"
 Then Click on the button "New"
@@ -30,7 +32,7 @@ Then Click on the button "table"
 And Switch back to the parent window 
 Then User waits for the element "save"
 Then Click on the button "save"    
-@login 
+@Contact @Test
 Scenario:New Contactviewname
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -38,16 +40,19 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"   
 Then Click on the link "Contact"
+Then user waits to loadpage
   Given User is on "ContactPage"
  Then Click on the link "ContactCreateNewView" 
 Then User Enter in to the text box "ViewName" "shigaCucumberview"
 Then User Enter in to the text box "viewUniquename" "uniqueshigaCucumberview"
 Then Click on the button "viewsave"
+Then user waits to loadpage
 #custom validation error
 Then Click on the button "save"    
-@login 
+@Contact @Test
 Scenario:Recently created Contact
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -55,11 +60,13 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"  
 Then Click on the link "Contact"
+Then user waits to loadpage
   Given User is on "ContactPage"		
  Then Select from dropdown "RightDropdown" "Recently Created"    
- @login 
+ @Contact @Test
 Scenario:My Contact
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -67,11 +74,13 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"  
 Then Click on the link "Contact"
+Then user waits to loadpage
   Given User is on "ContactPage"		
  Then Select from dropdown "viewDropdown" "My Contacts"    
- @login 
+@Contact @Test
 Scenario:view a contact in contat page
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -79,7 +88,10 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"  
 Then Click on the link "Contact"
+Then user waits to loadpage
  Given User is on "ContactPage"		
+ Then user waits to loadpage
  Then Click on the link "Onecontact"  

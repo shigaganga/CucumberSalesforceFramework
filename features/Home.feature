@@ -1,5 +1,5 @@
 Feature:Home Usermenu scenarios
-@Login  
+@Home @Test  
 Scenario:Login with valid username and password
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -7,11 +7,12 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown"
 
-@Login 
+@Home @Test
 Scenario:Usermenuprofile
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -19,6 +20,7 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown"
@@ -45,7 +47,7 @@ Then Back to defaultframe
 Then Change to frame "frame4"
 Then user waits to loadpage
 Then Click on the button "photosave2"
-@Login
+@Home @Test
 Scenario:Usermenusettings home
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -53,6 +55,7 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown"
@@ -76,7 +79,7 @@ Then Click on the button "saveEmailsettings"
 Then Click on the link "calender"
 Then Click on the link "activityremainder"
 Then Click on the button "openRemainder"
- @Login @Developing
+@Home @Test
 Scenario:Developer Console
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -84,6 +87,7 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown" 
@@ -91,7 +95,7 @@ When Find the current parent window "parentwindow"
 Then Click on the button "developerConsole" 
 And Switch to the new window "newWindow"
 And Switch back to the parent window
-@Login
+@Home @Test
 Scenario:Usermenu Logout 
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -99,6 +103,7 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "usermenudropdown"
 Then Click on the button "usermenudropdown" 

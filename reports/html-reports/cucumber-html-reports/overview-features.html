@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                14,
-                0,
-                14,
+                537,
+                3,
+                13,
                 0,
                 1
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 29) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 554) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                1
+                30,
+                4
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 34) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   4,
+                   3
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber</td>
         <td>1</td>
-      <td>18 Apr 2024, 11:30</td>
+      <td>10 Jul 2024, 12:57</td>
     </tr>
   </tbody>
 </table>
@@ -325,54 +325,156 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_2292591987.html">Login scenarios of salesforce</a></td>
+        <td class="tagname"><a href="report-feature_4185273984.html">Account scenarios of salesforce</a></td>
 
-        <td      class="passed"    >14</td>
+        <td      class="passed"    >80</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >10</td>
         <td >0</td>
-        <td     class="skipped"   >14</td>
+        <td >0</td>
+        <td class="total">91</td>
+
+        <td  class="passed"    >4</td>
+        <td  class="failed"    >1</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="47414988900">47.414</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_1_2292591987.html">Login scenarios of salesforce</a></td>
+
+        <td      class="passed"    >83</td>
+        <td      class="failed"    >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">85</td>
+
+        <td  class="passed"    >3</td>
+        <td  class="failed"    >2</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="55408270300">55.408</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_2_2629244442.html">Home Usermenu scenarios</a></td>
+
+        <td      class="passed"    >95</td>
+        <td >0</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td   class="undefined" >1</td>
-        <td class="total">29</td>
+        <td class="total">99</td>
 
-        <td >0</td>
+        <td  class="passed"    >4</td>
         <td  class="failed"    >1</td>
-        <td class="total">1</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="10821669900">10.821</td>
+        <td class="duration" data-value="38510515500">38.510</td>
         <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_3_3805868951.html">Lead scenarios of salesforce</a></td>
+
+        <td      class="passed"    >50</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">50</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="39296175500">39.296</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_4_1499400840.html">Login scenarios of salesforce</a></td>
+
+        <td      class="passed"    >40</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">40</td>
+
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="11933901300">11.933</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_5_412190502.html">Account scenarios of salesforce</a></td>
+
+        <td      class="passed"    >81</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">81</td>
+
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="50423967100">50.423</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_6_2525734318.html">Account scenarios of salesforce</a></td>
+
+        <td      class="passed"    >108</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">108</td>
+
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="69818946400">1:9.818</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>14</td>
-      <td>0</td>
-      <td>14</td>
+      <td>537</td>
+      <td>3</td>
+      <td>13</td>
       <td>0</td>
       <td>1</td>
-      <td>29</td>
+      <td>554</td>
 
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>30</td>
+      <td>4</td>
+      <td>34</td>
 
-      <td class="duration">10.821</td>
-      <td>1</td>
+      <td class="duration">5:12.806</td>
+      <td>7</td>
     </tr>
     <tr>
       <td></td>
-      <td>48.28%</td>
+      <td>96.93%</td>
+      <td>0.54%</td>
+      <td>2.35%</td>
       <td>0.00%</td>
-      <td>48.28%</td>
-      <td>0.00%</td>
-      <td>3.45%</td>
+      <td>0.18%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>88.24%</td>
+      <td>11.76%</td>
       <td></td>
       <td></td>
-      <td>0.00%</td>
+      <td>57.14%</td>
     </tr>
   </tfoot>
 </table>

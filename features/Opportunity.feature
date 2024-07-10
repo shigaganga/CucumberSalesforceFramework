@@ -1,5 +1,5 @@
 Feature:Account scenarios of salesforce
-@login
+@opportunity @Test
 Scenario:Opportunity dropdown
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -7,11 +7,13 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then Click on the link "Opportunity"
+Then user waits to loadpage
 Given User is on "OpportunityPage"
 Then Click on the link "OppDropDown"
-@login 
+@opportunity @Test
 Scenario:New Account
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -19,8 +21,10 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then Click on the link "Opportunity"
+Then user waits to loadpage
 Given User is on " OpportunityPage"
 Then User waits for the element "NewOpp"
 Then Click on the link "NewOpp"
@@ -41,7 +45,7 @@ Then Click on the button "table"
 And Switch back to the parent window	
 Then User waits for the element "save"
 Then Click on the button "save"  
-@login 
+@opportunity @Test
 Scenario:opportunity pipeline
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -49,11 +53,13 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then Click on the link "Opportunity"
+Then user waits to loadpage
 Given User is on " OpportunityPage" 
  Then Click on the link "oppPipeline"		 
- @login  
+@opportunity @Test
 Scenario: stuck opportunities
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -61,11 +67,13 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then Click on the link "Opportunity"
+Then user waits to loadpage
 Given User is on " OpportunityPage" 
  Then Click on the link "StuckOpp"		 
-  @login  
+  @opportunity @Test
 Scenario:Quarterly summary link
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -73,8 +81,10 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then Click on the link "Opportunity"
+Then user waits to loadpage
 Given User is on " OpportunityPage" 		 
 Then Click on the link "QuarterlyLink"
  Then Select from dropdown "interval" "Current FQ" 

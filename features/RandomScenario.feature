@@ -1,5 +1,5 @@
 Feature:Account scenarios of salesforce
-@login @Test33
+@Random @Test
 Scenario:Opportunity dropdown
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -7,13 +7,15 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "Home"
 Then Click on the link "Home"
+Then user waits to loadpage
 Given User is on "RandomScenarioPage"
  Then Click on the link "name"  
  Then gettitle of the page 
- @login @Test34
+ @Random @Test
 Scenario:Edit Profile name
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -21,9 +23,11 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "Home"
 Then Click on the link "Home"
+Then user waits to loadpage
 Given User is on "RandomScenarioPage"
  Then Click on the link "name" 
  Then Click on the link "EditProfile"
@@ -32,7 +36,7 @@ Given User is on "RandomScenarioPage"
  Then Clear Element "lastname"
  Then User Enter in to the text box "lastname" "abcd"
  Then Click on the button "SaveAll"
- @login @Test35
+ @Random @Test
 Scenario:Edit Profile name
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -40,8 +44,10 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
  Then Click on the button "plusTab"
+ Then user waits to loadpage
  Given User is on "RandomScenarioPage"
  Then Click on the button "CustomizeTab"
  Then Click on the button "selectab"
@@ -59,7 +65,7 @@ Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
 
- @login @Test36
+ @Random @Test
 Scenario:Edit Profile name
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -67,9 +73,11 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "Home"
 Then Click on the link "Home"
+Then user waits to loadpage
 Given User is on "RandomScenarioPage"
 Then Click on the link "currentDate"
 Then Click on the link "eightPM"
@@ -81,7 +89,7 @@ Then Click on the button "other"
 And Switch back to the parent window 
 Then User Enter in to the text box "EndTime" "9:00 PM"
 Then Click on the button "saveEvent"
- @login @Test37
+@Random @Test
 Scenario:Edit Profile name
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
@@ -89,9 +97,11 @@ Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
 Then User Enter in to the text box "Password" "Ganga@2024"
 Then Click on the button "Login"
+Then user waits to loadpage
 Given User is on "HomePage"
 Then User waits for the element "Home"
 Then Click on the link "Home"
+Then user waits to loadpage
 Given User is on "RandomScenarioPage"
 Then Click on the link "currentDate"
 Then Click on the link "fourPM"
