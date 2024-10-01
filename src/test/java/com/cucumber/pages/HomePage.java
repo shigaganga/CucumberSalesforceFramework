@@ -74,7 +74,7 @@ addObject("openRemainder",By.id("testbtn"));
 addObject("parentwindow",By.xpath("//div[@id='userNav']"));
 addObject("developerConsole", By.xpath("//a[@title='Developer Console (New Window)']"));
 addObject("Contact", By.xpath("//li[@id='Contact_Tab']/a"));
-addObject("Account", By.xpath("//a[@title='Accounts Tab']"));
+addObject("Account", By.xpath("//*[@id='Account_Tab']/a"));
 addObject("Opportunity", By.xpath("//a[text()='Opportunities']"));
 addObject("Lead", By.xpath("//a[text()='Leads']"));
 addObject("Home", By.xpath("//a[text()='Home']"));

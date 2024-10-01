@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 						 "json:target/cucumber-reports/cucumber.json"},
 				 monochrome=true,
                      
-                    tags="@Test"
+                   tags="@Test"
                      		
 				 )
 

@@ -5,7 +5,7 @@ Given User launch the application in "Chrome"
 Given User is on "LoginPage"
 Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
-Then User Enter in to the text box "Password" "Ganga@2024"
+Then User Enter in to the text box "Password" "Arush@2013"
 Then Click on the button "Login"
 Then user waits to loadpage
 Given User is on "HomePage"
@@ -18,7 +18,7 @@ Given User launch the application in "Chrome"
 Given User is on "LoginPage"
 Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
-Then User Enter in to the text box "Password" "Ganga@2024"
+Then User Enter in to the text box "Password" "Arush@2013"
 Then Click on the button "Login"
 Then user waits to loadpage
 Given User is on "HomePage"
@@ -47,13 +47,13 @@ Then Back to defaultframe
 Then Change to frame "frame4"
 Then user waits to loadpage
 Then Click on the button "photosave2"
-@Home @Test
+@Home
 Scenario:Usermenusettings home
 Given User launch the application in "Chrome"
 Given User is on "LoginPage"
 Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
-Then User Enter in to the text box "Password" "Ganga@2024"
+Then User Enter in to the text box "Password" "Arush@2013"
 Then Click on the button "Login"
 Then user waits to loadpage
 Given User is on "HomePage"
@@ -85,7 +85,7 @@ Given User launch the application in "Chrome"
 Given User is on "LoginPage"
 Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
-Then User Enter in to the text box "Password" "Ganga@2024"
+Then User Enter in to the text box "Password" "Arush@2013"
 Then Click on the button "Login"
 Then user waits to loadpage
 Given User is on "HomePage"
@@ -101,7 +101,7 @@ Given User launch the application in "Chrome"
 Given User is on "LoginPage"
 Then User waits for the element "Username"
 Then User Enter in to the text box "Username" "shiga@tekarch.com"
-Then User Enter in to the text box "Password" "Ganga@2024"
+Then User Enter in to the text box "Password" "Arush@2013"
 Then Click on the button "Login"
 Then user waits to loadpage
 Given User is on "HomePage"
